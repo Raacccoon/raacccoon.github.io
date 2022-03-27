@@ -3,23 +3,101 @@ body {
 }
 
 #main {
-    position: absolute;
     left: 0;
     top: 50%;
     padding: 0 20px;
-    width: 100%;
+    width: 97%;
     text-align: center;
 		color: #D1F6EF;
+		position: absolute;
+		font-family: 'Ubuntu', sans-serif;
 }
 
 canvas{
-    height:100vh;
+    height:300vh;
+		width: 100%;
     background-color:#182230;
 }
 #main h1{
   letter-spacing: 5px;
   font-size: 5rem;
-  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+	#main {
+		width: 94%;
+	}
+
+	#main h2{
+		font-size: 2rem;
+	}
+
+	#main h1 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#main {
+		width: 92%;
+	}
+
+	#main h2 {
+		font-size: 2rem;
+	}
+
+	#main h1 {
+		font-size: 3rem;
+	}
+}
+
+.main__Container {
+	position: absolute;
+	width: 80%;
+	border-radius: 20px;
+	margin: 30px 9% 10%;
+	height:200vh;
+	color: #D1F6EF;
+	box-shadow: 3px 3px 7px #1D314C;
+	background-color: #181F29;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.main__Container p {
+	color: #B6CBC7;
+	margin: 0 9% 10%;
+}
+
+.main__Container hr {
+	margin: 0 4% 5%;
+	color: #D1F6EF;
+	border-width: medium;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 960px) {
+	.main__Container {
+		margin: 30px 6% 4%;
+	}
+
+	.main__Container h2 {
+		font-size: 3rem;
+	}
+
+	.main__Container p {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.main__Container {
+		font-size: 3rem;
+		margin: 30px 4% 4%;
+	}
+
+	.main__Container p {
+		font-size: 2rem;
+	}
 }

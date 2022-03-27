@@ -4,8 +4,8 @@
  */
  document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
-    dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa'
+    dotColor: '#258B75',
+    lineColor: '#258B75'
   });
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
@@ -390,7 +390,7 @@
     lineWidth: 1,
     curvedLines: false,
     proximity: 100, // How close two dots need to be before they join
-    parallax: true,
+    parallax: false,
     parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
     onInit: function() {},
     onDestroy: function() {}
