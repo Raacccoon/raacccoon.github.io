@@ -51,6 +51,10 @@ canvas{
 	#main h1 {
 		font-size: 3rem;
 	}
+
+	canvas{
+	    height:320vh;
+	}
 }
 
 .main__Container {
@@ -72,14 +76,33 @@ canvas{
 
 .main__Container hr {
 	margin: 0 4% 5%;
-	color: #D1F6EF;
+	color: #0E876F;
 	border-width: medium;
 	border-radius: 3px;
+}
+
+a {
+  color: #93F9E5;
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #13D5AE;
+}
+
+a:visited {
+  color: #50B5A1;
 }
 
 @media screen and (max-width: 960px) {
 	.main__Container {
 		margin: 30px 6% 4%;
+		height: 210vh;
 	}
 
 	.main__Container h2 {
@@ -95,9 +118,67 @@ canvas{
 	.main__Container {
 		font-size: 3rem;
 		margin: 30px 4% 4%;
+		height: 225vh;
 	}
 
 	.main__Container p {
 		font-size: 2rem;
+	}
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects_Container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects__Card {
+    margin: 1rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    background-image: url(/images/thunder.png);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+
+.projects__Card_2 {
+	margin: 1rem;
+	height: 300px;
+	width: 300px;
+	border-radius: 4px;
+	background-image: url(https://raw.githubusercontent.com/Raacccoon/KangarooBase/main/kc.png), linear-gradient(to bottom, #0185D6 0%, #052872  100%);
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+
+.projects__Card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease;
+}
+
+.projects__Card_2:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease;
+}
+
+@media screen and (max-width: 640px) {
+	.projects__Card {
+		height: 250px;
+		width: 250px;
+	}
+
+	.projects__Card_2 {
+		height: 250px;
+		width: 250px;
 	}
 }
