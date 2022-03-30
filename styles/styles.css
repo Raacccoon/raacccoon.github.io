@@ -114,25 +114,7 @@ a:visited {
 	}
 }
 
-@media screen and (max-width: 640px) {
-	.main__Container {
-		font-size: 3rem;
-		margin: 30px 4% 4%;
-		height: 225vh;
-	}
-
-	.main__Container p {
-		font-size: 2rem;
-	}
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects_Container {
+.projects__Container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -143,42 +125,198 @@ a:visited {
     height: 300px;
     width: 300px;
     border-radius: 4px;
-    background-image: url(/images/thunder.png);
+    background-image: url(/images/thunder.png), linear-gradient(to bottom, #276DA2 0%, #31546E 100%);
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
-
-.projects__Card_2 {
-	margin: 1rem;
-	height: 300px;
-	width: 300px;
-	border-radius: 4px;
-	background-image: url(https://raw.githubusercontent.com/Raacccoon/KangarooBase/main/kc.png), linear-gradient(to bottom, #0185D6 0%, #052872  100%);
-	background-size: cover;
-	position: relative;
-	color: #fff;
+.projects__Card:nth-child(2) {
+    background-image: url(/images/kc.png), linear-gradient(to bottom, #0185D6 0%, #052872  100%);
 }
+
 
 .projects__Card:hover {
     transform: scale(1.075);
     transition: 0.2s ease;
 }
 
-.projects__Card_2:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease;
+@media screen and (max-width: 640px) {
+    .projects__Card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .projects__Card_2 {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+]footer{
+ position: fixed;
+ bottom: 0;
+}
+.footer-distributed{
+ background-color: #181F29;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ width: 100%;
+ text-align: left;
+ font: bold 16px sans-serif;
+
+ padding: 55px 50px;
+ margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+ width: 40%;
+}
+
+.footer-distributed h3{
+ color:  #D1F6EF;
+ font-size: 3rem;
+ margin: 0;
+}
+
+
+
+.footer-distributed .footer-links{
+ color:  #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+
+.footer-distributed .footer-links a{
+ display:inline-block;
+ line-height: 1.8;
+ text-decoration: none;
+ color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+ color:  #8f9296;
+ font-size: 14px;
+ font-weight: normal;
+ margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+ width: 35%;
+}
+
+.footer-distributed .footer-center i{
+ background-color:  #33383b;
+ color: #ffffff;
+ font-size: 25px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+ font-size: 17px;
+ line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+ display: inline-block;
+ color: #ffffff;
+ vertical-align: middle;
+ margin:0;
+}
+
+.footer-distributed .footer-center p span{
+ display:block;
+ font-weight: normal;
+ font-size:14px;
+ line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+ color:  #5383d3;
+ text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+ width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+ line-height: 20px;
+ color:  #92999f;
+ font-size: 13px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+ display: block;
+ color:  #ffffff;
+ font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+ margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+ display: inline-block;
+ width: 35px;
+ height: 35px;
+ cursor: pointer;
+ background-color:  #33383b;
+ border-radius: 2px;
+
+ font-size: 20px;
+ color: #ffffff;
+ text-align: center;
+ line-height: 35px;
+
+ margin-right: 3px;
+ margin-bottom: 5px;
 }
 
 @media screen and (max-width: 640px) {
-	.projects__Card {
-		height: 250px;
-		width: 250px;
+	.main__Container {
+		font-size: 3rem;
+		margin: 30px 4% 4%;
+		height: 225vh;
 	}
 
-	.projects__Card_2 {
-		height: 250px;
-		width: 250px;
+	.main__Container p {
+		font-size: 2rem;
+	}
+
+	.footer-distributed{
+	font: bold 14px sans-serif;
+
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+	margin-left: 0;
 	}
 }
