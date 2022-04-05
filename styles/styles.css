@@ -125,10 +125,13 @@ a:visited {
     height: 300px;
     width: 300px;
     border-radius: 4px;
-    background-image: url(/images/thunder.png), linear-gradient(to bottom, #276DA2 0%, #31546E 100%);
     background-size: cover;
     position: relative;
     color: #fff;
+}
+
+.projects__Card:nth-child(1) {
+    background-image: url(/images/thunder.png), linear-gradient(to bottom, #276DA2 0%, #31546E 100%);
 }
 
 .projects__Card:nth-child(2) {
