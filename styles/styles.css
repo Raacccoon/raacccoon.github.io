@@ -135,6 +135,10 @@ a:visited {
     background-image: url(/images/kc.png), linear-gradient(to bottom, #0185D6 0%, #052872  100%);
 }
 
+.projects__Card:nth-child(3) {
+    background-image: url(https://i.postimg.cc/bJmfFH7L/image.png), linear-gradient(to bottom, #0185D6 0%, #052872  100%);
+}
+
 
 .projects__Card:hover {
     transform: scale(1.075);
